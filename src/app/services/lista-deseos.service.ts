@@ -9,13 +9,6 @@ export class ListaDeseosService {
   
   constructor() {
 
-    // let lista1 = new Lista('Compras del Super');
-    // let lista2 = new Lista('Juegos que deseo');
-    // let lista3 = new Lista('Cosas de la Uni');
-
-    // this.listas.push(lista1);
-    // this.listas.push(lista2);
-    // this.listas.push(lista3);
 
     this.cargarData();
 
@@ -33,6 +26,11 @@ export class ListaDeseosService {
 
    public agregarLista(lista: Lista) {
      this.listas.push(lista);
+     this.actualizarData();
+   }
+
+   public borrarLista(idx:number) {
+     this.listas.splice(idx, 1);
      this.actualizarData();
    }
 
