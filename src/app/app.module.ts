@@ -8,6 +8,7 @@ import { ListaDeseosService } from './services/lista-deseos.service';
 
 // PIPES
 import { PlaceholderPipe } from './pipes/placeholder.pipe';
+import { PendientesPipe } from './pipes/pendientes.pipe';
 
 
 // PAGES
@@ -25,6 +26,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     PlaceholderPipe,
+    PendientesPipe,
     TabsPage,
     PendientesComponent,
     TerminadosComponent,
